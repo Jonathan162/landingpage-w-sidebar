@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description"
+    content="Digitally is a digital agency that specializes in SEO and Web Development. Get your quote here!" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/index.css">
+  <title>Digitally | Digital Agency</title>
+</head>
+
+<body>
+  <header class="main-head">
+    <nav>
+      <h1 id="logo">Digitally</h1>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-introduction flex">
+        <h2>
+          <span class="brand">Digitally</span>:<br />
+          Web Development & SEO
+        </h2>
+        <p>
+          Lorem ipsum Dolor sit amet consectetur adipisicing elit. Cumque
+          minima assumenda expedita similique quaerat maiores ab, itaque hic
+          explicabo eaque!
+        </p>
+        <a class="cta" href="#contact"><button>Get Your Quote</button></a>
+      </div>
+      <div class="hero-images">
+        <img class="hero-img" src="./img/hero.jpg" alt="illustration" />
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="services">
+        <div class="services-text flex" id="work">
+          <h2>What We Can Do For You</h2>
+          <div class="services-card">
+            <h3><span class="brand">Web Development</span>.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptas, maxime reprehenderit. Assumenda necessitatibus id
+              consectetur asperiores harum dolore nihil fuga?
+            </p>
+          </div>
+          <div class="services-card">
+            <h3><span class="brand">SEO & SEM</span>.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptas, maxime reprehenderit. Assumenda necessitatibus id
+              consectetur asperiores harum dolore nihil fuga?
+            </p>
+          </div>
+          <div class="services-card">
+            <h3><span class="brand">Photography</span>.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptas, maxime reprehenderit. Assumenda necessitatibus id
+              consectetur asperiores harum dolore nihil fuga?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="portfolio" id="portfolio">
+      <header class="portfolio-head">
+        <h2>Our Portfolio.</h2>
+        <button class="portfolio-btn">Check It Out</button>
+      </header>
+      <img class="gallery1" src="./img/guadalupe.jpg" alt="guadalupe, spain" />
+      <img class="gallery2" src="./img/tokyo.jpg" alt="tokyo, japan" />
+      <img class="gallery3" src="./img/ny.jpg" alt="new york, usa" />
+      <img class="gallery4" src="./img/bea.jpg" alt="girl standing below a tree in autumn" />
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="form-wrapper flex">
+        <div class="left"></div>
+        <h2>Let's Create Something <span class="brand">Awesome</span>.
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Temporibus autem vitae laboriosam nobis,
+          asperiores ut.</p>
+        <br>
+        <br>
+        <!-- The Modal -->
+        <button id="myBtn">Get Quote</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact form</h2>
+            <form class="contact__form" action="">
+              <label for="name">Full Name:</label>
+              <input id="name" type="text">
+              <label for="email">E-Mail:</label>
+              <input id="email" type="text">
+              <label for="phone">Phone:</label>
+              <input id="phone" type="text">
+              <label for="textarea">How Can We Help You?</label>
+              <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+              <button class="contact__btn" type="submit">Send</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div class="contact__right"><img src="/img/lisbon.jpg"></div>
+
+    </section>
+  </main>
+  <footer>
+    <h4>Digitally</h4>
+    <ul>
+      <li>
+        <a href="#"><img src="./img/youtube-symbol 1.svg" alt="youtube-social-media" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="./img/twitter 1.svg" alt="twitter-social-media" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="./img/instagram 1.svg" alt="instagram" /></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

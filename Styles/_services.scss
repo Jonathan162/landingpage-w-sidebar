@@ -1,0 +1,29 @@
+.services {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $background-color;
+  padding: 0 0 6rem 0;
+  text-align: center;
+
+    .services {
+  width: 60%;
+  margin: auto;
+    }
+    .services-text {
+  color: $white-color;
+  flex: 2 1 40rem;
+  justify-content: space-around;
+
+        div {
+        padding: 3rem 8rem;
+        }               
+        h3 {
+        padding: 2rem 0rem; 
+        }
+        h2 {
+        padding: 4rem;
+        }
+
+    }
+}

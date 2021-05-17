@@ -1,0 +1,39 @@
+
+.hero {
+  min-height: 90vh;
+  width: 95%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+    .hero-introduction {
+    flex: 1 1 40rem;
+    text-align: center;
+
+        p {
+        padding: 5rem 10rem;
+        color: #525252;
+        }
+        h2 {
+        padding-top: 3rem;
+        }
+        button {
+          @include button()
+        }
+        
+    }
+    .hero-images {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    }
+    .hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    margin: 3rem 0;
+    }
+}

@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1rem = 10px */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+
+$gray-text: #525252;
+$toggle: gray;
+$white-color: white;
+$special-color: rgb(122, 122, 255);
+$background-color: #414141;
+
+@mixin button {
+  padding: 2rem 4rem; 
+  background-color: $special-color;
+  color: $white-color;
+  border: none; 
+  outline: none;
+    &:hover {
+    color: #000;
+    cursor: pointer;
+    transition: all ease 1s;
+    } 
+}
+
+/* H1, H2, p, etc. */
+
+h1 {
+  font-size: calc(2rem + 1vw);
+}
+
+h2 {
+  font-size: calc(3.5rem + 1vw);
+}
+
+h3 {
+  font-size: calc(3rem + 1vw);
+}
+
+h4 {
+  font-size: calc(2.4rem + 1vw);
+}
+
+p, li, button, label, input, a {
+  font-size: calc(1.5rem + 1vw);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {                  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.brand {
+  color: $special-color;
+  font-weight: bold;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 842px) {
+
+  header {
+    margin-bottom: 5rem;
+  }
+
+  .hero {
+    width: 100%;
+    
+    p {
+    padding: 5rem 3rem;
+    }
+  }
+
+  /* About section */
+
+  .about-card {
+    min-width: 100vw;
+  }
+
+  /* Portfolio / gallery */
+
+  .portfolio img {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  .portfolio-head {
+    padding: 4rem 6rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    button {
+      min-width: 60vw;
+    }
+  }
+
+  .contact {
+      img {
+        display: none
+      }
+  }
+  
+  /* Footer */
+
+  footer ul {
+    order: 1;
+  }
+  footer h4 {
+    order: 2;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 5rem;
+    --header3: 4rem;
+    --header4: 3rem;
+    --text: 3rem;
+    --big: 8rem;
+  }
+}
