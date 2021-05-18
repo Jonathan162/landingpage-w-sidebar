@@ -333,8 +333,8 @@ nav .toggle .line3 {
   display: -ms-grid;
   display: grid;
   min-height: 90vh;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   position: relative;
 }
 
